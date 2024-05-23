@@ -127,7 +127,7 @@ img.float-center {
 
 @font-face {
 	font-family: ubuntuLight;
-	local: Resources/Fonts/ubuntulight-bold.ttf;
+	src: url('Resources/Fonts/ubuntulight-bold.ttf') format('truetye');
 	font-weight: bold;
 }
 
