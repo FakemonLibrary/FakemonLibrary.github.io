@@ -150,11 +150,17 @@ h1.barheader a {
 h1.barheader a:hover {
 	text-decoration: none;
 }
+ul {
+	font-family: notoSansPokeDollar;
+}
 ul.navlist {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	width: 100%;
+}
+li {
+	font-family: notoSansPokeDollar;
 }
 li a {
 	display: block;
