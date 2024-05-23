@@ -125,13 +125,21 @@ img.float-center {
 	overflow-y: scroll;
 }
 
+@font-face {
+	font-family: ubuntuLight;
+	src: url(resources/fonts/ubuntulight-bold.ttf);
+	font-weight: bold;
+}
+
 h1.barheader {
 	margin: 0;
 	padding: 15px;
 	background: #ababab;
+	font-family: ubuntuLight;
 	font-size: 15pt;
 }
 h1.barheader a {
+	font-family: ubuntuLight;
 	color: black;
 }
 h1.barheader a:hover {
@@ -271,17 +279,20 @@ p.footer {
 h1 {
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
+	font-family: ubuntuLight;
 	font-size: 20pt;
 }
 
 h1.lost-zone {
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
+	font-family: ubuntuLight;
 	font-size: 20pt;
 	text-align: center;
 }
 
 h2 {
+	font-family: ubuntuLight;
 	font-size: 18pt;
 	text-align: center;
 	margin: 0px 0px 15px 0px;
@@ -291,6 +302,7 @@ h2 {
 }
 
 h3 {
+	font-family: ubuntuLight;
 	font-size: 16pt;
 	text-align: center;
 	margin: 0px 0px 15px 0px;
@@ -386,7 +398,7 @@ a:hover {
 	max-width: 100%;
 }
 
-/*Dex List Styles=======================================================================*/
+/*Pokédex List Styles=======================================================================*/
 
 p.data {
 	margin: 0px;
