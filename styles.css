@@ -59,6 +59,9 @@ header {
 	margin: 0px;
 	padding: 15px;
 }
+div {
+	font-family: notoSansPokeDollar;
+}
 div.header {
 	border: 8px solid #f4ad7d;
 	border-radius: 25px;
