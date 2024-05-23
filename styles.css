@@ -131,6 +131,11 @@ img.float-center {
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: notoSansPokeDollar;
+	src: url('./Resources/Fonts/notosanspokedollar-regular.ttf') format('truetype');
+}
+
 h1.barheader {
 	margin: 0;
 	padding: 15px;
@@ -312,6 +317,7 @@ h3 {
 }
 
 p {
+	font-family: notoSansPokeDollar;
 	padding: 0px 2px 0px 2px;
 	margin: 0px 0px 15px 0px;
 }
@@ -560,11 +566,13 @@ table tr:first-child:last-child td:first-child:last-child { /*If the cell is the
 	border-radius: 5px;
 }
 
-th{
+th {
+	font-family: notoSansPokeDollar;
 	background-color: #dedef0;
 	font-weight: normal;
 }
 td {
+	font-family: notoSansPokeDollar;
 	background-color: #fcfcff;
 	text-align: center;
 }
