@@ -24,7 +24,6 @@ body {
 	flex-flow: column;
 	margin: auto;
 	height: 100%;
-	/*max-width: 1280px;*/
 }
 
 header {
@@ -716,6 +715,10 @@ table tr:first-child td:first-child:last-child { /*If this is the first row and 
 td.banner {
 	padding-left: 7px;
 	padding-right: 7px;
+}
+
+td.sprite-frame {
+	padding-top: 8px;
 }
 
 h1.tableh {
