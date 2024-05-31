@@ -179,6 +179,6 @@ function distortReality() {
 	pid = Math.floor(Math.random() * 66) + 1
 	if (pid == 66) {
 		G = document.getElementsByClassName("G");
-		G[0].src = "/Main/Pokédex/Gen4/Giratina-Origin-Shiny.png";
+		G[0].src = "/Resources/Giratina-Origin-Shiny.png";
 	}
 }
