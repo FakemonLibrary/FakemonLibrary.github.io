@@ -31,7 +31,7 @@ function buildPokedex(currentUniverse) {
 	for (i = 0; i < (dexTrackers.length); i++) {
 		iString = i.toString();
 		dexTrackers[i].id = currentUniverse + iString;
-		functionString = "toggleCaught('" + currentUniverse + iString + "')"
+		functionString = "toggleLiving('" + currentUniverse + iString + "')"
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
@@ -104,11 +104,44 @@ function toggleCaught(pid) {
 	}
 }
 
+function toggleLiving(pid) {
+	//Inspired by Lyra's website, this lets you track which Pokémon you have caught in each ROM hack/fan game
+	//Click once to set to Registered, click once again to set to Caught
+	var element = document.getElementById(pid);
+	
+	if (element.classList.contains("registered")) {
+		setCookie(pid, "registered", -1);
+		setCookie(pid, "caught", 400);
+		element.classList.toggle("registered");
+		element.classList.toggle("caught");
+	} else if (element.classList.contains("caught")) {
+		setCookie(pid, "caught", -1);
+		element.classList.toggle("caught");
+	} else {
+		setCookie(pid, "registered", 400);
+		element.classList.toggle("registered");
+	}
+}
+
 function loadSave(currentUniverse) {
 	var slot, i;
 	slot = document.getElementsByClassName("dex-tracker");
 	for (i = 0; i < (slot.length); i++) {
 		if (getCookie(currentUniverse + i.toString()) == "caught") {
+			slot[i].classList.toggle("caught");
+			setCookie(currentUniverse + i.toString(), "caught", 400);
+		}
+	}
+}
+
+function loadSaveLiving(currentUniverse) {
+	var slot, i;
+	slot = document.getElementsByClassName("dex-tracker");
+	for (i = 0; i < (slot.length); i++) {
+		if (getCookie(currentUniverse + i.toString()) == "registered") {
+			slot[i].classList.toggle("registered");
+			setCookie(currentUniverse + i.toString(), "registered", 400);
+		} else if (getCookie(currentUniverse + i.toString()) == "caught") {
 			slot[i].classList.toggle("caught");
 			setCookie(currentUniverse + i.toString(), "caught", 400);
 		}

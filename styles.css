@@ -662,6 +662,13 @@ table td.last-child {
 	border-bottom: 1px;
 }
 
+table.registered th {
+	background: #e2d676;
+}
+table.registered td {
+	background: #f6f3b2;
+}
+
 table.caught th {
 	background: #76e27d;
 }
