@@ -95,6 +95,7 @@ function getCookie(cname) {
 
 function toggleCaught(pid) {
 	//Inspired by Lyra's website, this lets you track which Pokémon you have caught in each ROM hack/fan game
+	//Usng this for tracking individual forms (for Pokémon that have them)
 	var element = document.getElementById(pid);
 	element.classList.toggle("caught");
 	if (element.classList.contains("caught")) {
@@ -106,7 +107,7 @@ function toggleCaught(pid) {
 
 function toggleLiving(pid) {
 	//Inspired by Lyra's website, this lets you track which Pokémon you have caught in each ROM hack/fan game
-	//Click once to set to Registered, click once again to set to Caught
+	//Click once to set to Registered, click once again to set to Caught. Then one more click, and it resets.
 	var element = document.getElementById(pid);
 	
 	if (element.classList.contains("registered")) {
@@ -173,10 +174,14 @@ function flipSprite(spr, front, back) {
 function distortReality() {
 	var fallerThoughts = Array(
 		"Hahaha, I guess not. That white hand on your shoulder... I'm just imagining it.",
+		"Our words shall remain here for the ages.",
+		"Every rumor has a kernel of truth to it.",
+		"A flipped coin doesn't always land heads or tails. Sometimes it may never land at all...",
 		"By the way, who is that standing behind you?",
 		"Dad, Mom, Abra... Where are you...?",
 		"No, you're not the one...",
 		"I'm going to go for help. Wait in the usual place.",
+		"I wonder what he meant. Ice cream, maybe?",
 		"Where... Where am I?",
 		"When I think about it, you, too, are all alone in the world.",
 		"Hello, starlight... You certainly gave everyone a scare.",
@@ -185,6 +190,7 @@ function distortReality() {
 		"Shhh! Please walk quietly in the hallway!",
 		"We need to talk about parallel universes.",
 		"This message should not appear. I'll be scared if it does...",
+		"Stones to rival the celestial spheres, the seven hewn by a fell hand.",
 		"You've met with a terrible fate, haven't you?",
 		"I think you are lost. It’s got to be around here somewhere...",
 		"Have you ever thought of a world where everything is exactly the same... except you don't exist?",
