@@ -171,10 +171,12 @@ function flipSprite(spr, front, back) {
 	}
 }
 
-function distortReality() {
+function waveCollapse() {
 	var fallerThoughts = Array(
 		"Hahaha, I guess not. That white hand on your shoulder... I'm just imagining it.",
 		"Our words shall remain here for the ages.",
+		"We feared it.",
+		"The next world waits for you.",
 		"Every rumor has a kernel of truth to it.",
 		"A flipped coin doesn't always land heads or tails. Sometimes it may never land at all...",
 		"By the way, who is that standing behind you?",
@@ -184,6 +186,7 @@ function distortReality() {
 		"I wonder what he meant. Ice cream, maybe?",
 		"Where... Where am I?",
 		"When I think about it, you, too, are all alone in the world.",
+		"Seek out all Fakemon.",
 		"Hello, starlight... You certainly gave everyone a scare.",
 		"You’re just in time for the end of the world!",
 		"Don't become his lunch.",
