@@ -63,7 +63,7 @@ div {
 }
 div.header {
 	border: 8px solid #f4ad7d;
-	border-radius: 25px;
+	/*border-radius: 25px;*/
 	background-color: white;
 	height: 52px;
 	padding: 0px;
@@ -243,7 +243,7 @@ footer {
 div.footer {
 	font-family: notoSansPokeDollar;
 	border: 8px solid #a1fdfd;
-	border-radius: 25px;
+	/*border-radius: 25px;*/
 	background-color: white;
 	padding: 7px;
 	margin: 0px;
@@ -317,7 +317,7 @@ h2 {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	background-color: #ff8576;
 }
 
@@ -327,7 +327,7 @@ h3 {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 2px 7px;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	background-color: #ffc0b7;
 }
 
@@ -355,14 +355,14 @@ h2.news-header {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	background-color: #9191ff;
 }
 div.news-entry {
 	padding: 20px;
 	margin: 0px 0px 20px 0px;
 	background-color: #e6e6ff;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 }
 div.news-entry:hover {
 	background-color: #ccccff;
@@ -377,7 +377,7 @@ p.news-signature {
 table {
 	border: 1px;
 	border-spacing: 1px;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 	background-color: #5b5672;
 	padding: 0px;
 }
@@ -429,7 +429,7 @@ p.data {
 }
 p.type {
 	text-align: center;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 	margin: 0px;
 	padding: 0px;
 }
@@ -542,45 +542,6 @@ p.Crystal {
 	background-color: #5adcfa;
 }
 
-table tr:first-child th:first-child { /*Round top-left border if it's the first row of the first column.*/
-	border-radius: 5px 0 0 0;
-}
-table tr:first-child th:last-child {
-	border-radius: 0 5px 0 0;
-}
-table tr:first-child th:first-child:last-child { /*If there is only one column, round its top corners.*/
-	border-radius: 5px 5px 0 0;
-}
-
-table tr:first-child td:first-child {
-	border-radius: 5px 0 0 0;
-}
-table tr:first-child td:last-child {
-	border-radius: 0 5px 0 0;
-}
-
-table tr:last-child th:first-child {
-	border-radius: 0 0 0 5px;
-}
-table tr:last-child th:last-child {
-	border-radius: 0 0 5px 0;
-}
-
-table tr:last-child td:first-child {
-	border-radius: 0 0 0 5px;
-}
-table tr:last-child td:last-child {
-	border-radius: 0 0 5px 0;
-}
-
-table tr:last-child td:first-child:last-child { /*If the cell is the last one in a single colum, round its bottom edges.*/
-	border-radius: 0 0 5px 5px;
-}
-
-table tr:first-child:last-child td:first-child:last-child { /*If the cell is the only cell, round all corners.*/
-	border-radius: 5px;
-}
-
 th {
 	font-family: notoSansPokeDollar;
 	background-color: #dedef0;
@@ -640,7 +601,7 @@ div.tracker-outline {
 	border-style: solid;
 	border-color: #5b5672;
 	border-width: 1px;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 }
 table.dex-tracker {
 	border-spacing: 0px;
@@ -695,18 +656,6 @@ td.type-cell {
 }
 
 /*Pokédex Page Styles===========================================================================================*/
-table tr:first-child:last-child th:first-child { /*If this is the only row and this is the first cell in it, round its left corners.*/
-	border-radius: 5px 0 0 5px;
-}table tr:first-child:last-child td:first-child { /*If this is the only row and this is the first cell in it, round its left corners.*/
-	border-radius: 5px 0 0 5px;
-}table tr:first-child:last-child th:last-child { /*If this is the only row and this is the last cell in it, round its right corners.*/
-	border-radius: 0 5px 5px 0;
-}table tr:first-child:last-child td:last-child { /*If this is the only row and this is the last cell in it, round its right corners.*/
-	border-radius: 0 5px 5px 0;
-}
-table tr:first-child td:first-child:last-child { /*If this is the first row and this is the only cell in it, round its top corners*/
-	border-radius: 5px 5px 0 0;
-}
 
 .full {
 	width: 100%;
@@ -753,7 +702,7 @@ h2.dex-section {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	background-color: unset;
 }
 
@@ -762,7 +711,7 @@ h3.dex-section {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 2px 7px;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	background-color: unset;
 }
 
@@ -863,7 +812,7 @@ td.total {
 
 p.stat { /*Used for EV yield, not Base Stats*/
 	text-align: center;
-	border-radius: 7px;
+	/*border-radius: 7px;*/
 	margin: 0px;
 	padding: 0px;
 }
@@ -885,7 +834,7 @@ p.stat { /*Used for EV yield, not Base Stats*/
 p.color {
 	color: white;
 	text-align: center;
-	border-radius: 7px;
+	/*border-radius: 7px;*/
 	margin: 0px;
 	padding: 0px;
 }
