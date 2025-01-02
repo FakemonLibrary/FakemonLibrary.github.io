@@ -174,14 +174,14 @@ function flipSprite(spr, front, back) {
 // Select the canvas and set up context
 const canvas = document.getElementById("lostZoneCanvas");
 const ctx = canvas.getContext("2d");
-getElementById("lost-article");
+lostArticle = getElementById("lost-article");
 
 // Resize canvas to fit the page
-canvas.width = lost-article.width;
+canvas.width = lostArticle.width;
 canvas.height = 120;
 
 window.addEventListener("resize", () => {
-    canvas.width = lost-article.width;
+    canvas.width = lostArticle.width;
     canvas.height = 120;
 });
 
