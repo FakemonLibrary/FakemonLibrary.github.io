@@ -235,7 +235,6 @@ function animate() {
     handleParticles();
     requestAnimationFrame(animate);
 }
-animate();
 
 function waveCollapse() {
 	var fallerThoughts = Array(
