@@ -180,8 +180,8 @@ canvas.width = rect.width;
 canvas.height = 120;
 
 window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = rect.width;
+    canvas.height = 120;
 });
 
 ctx.fillStyle = 'cyan';
