@@ -185,12 +185,12 @@ window.addEventListener("resize", () => {
 });
 
 ctx.fillStyle = 'cyan';
-	ctx.fillRect(0, 0, canvas.width, canvas.height);
-	const img = new Image();
-	img.src = "/Resources/Giratina-Origin.png"; // Replace with your sprite’s path
-	img.onload = () => {
-		ctx.drawImage(img, 100, 100, 96, 96); // Adjust position and size as needed
-	};
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+const img = new Image();
+img.src = "/Resources/Giratina-Origin.png";
+img.onload = () => {
+	ctx.drawImage(img, 0, 0, 96, 96); // Adjust position and size as needed
+};
 
 const particles = [];
 const colors = ["#00FFFF", "#C71585", "#8A2BE2"]; // Cyan, Magenta, Purple
