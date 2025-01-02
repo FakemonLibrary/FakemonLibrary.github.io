@@ -174,18 +174,19 @@ function flipSprite(spr, front, back) {
 // Select the canvas and set up context
 const canvas = document.getElementById("lostZoneCanvas");
 const ctx = canvas.getContext("2d");
+getElementById("lost-article");
 
 // Resize canvas to fit the page
-canvas.width = rect.width;
+canvas.width = lost-article.width;
 canvas.height = 120;
 
 window.addEventListener("resize", () => {
-    canvas.width = rect.width;
+    canvas.width = lost-article.width;
     canvas.height = 120;
 });
 
 ctx.fillStyle = 'cyan';
-ctx.fillRect(0, 0, rect.width, 120);
+ctx.fillRect(0, 0, lost-article.width, 120);
 
 const img = new Image();
 img.src = "/Resources/Giratina-Origin.png";
