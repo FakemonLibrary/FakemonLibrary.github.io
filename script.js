@@ -171,6 +171,72 @@ function flipSprite(spr, front, back) {
 	}
 }
 
+// Select the canvas and set up context
+const canvas = document.getElementById("lostZoneCanvas");
+const ctx = canvas.getContext("2d");
+
+// Resize canvas to fit the page
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+
+const particles = [];
+const colors = ["#00FFFF", "#C71585", "#8A2BE2"]; // Cyan, Magenta, Purple
+
+// Particle class
+class Particle {
+    constructor() {
+        this.x = canvas.width / 2; // Start in the center
+        this.y = canvas.height / 2;
+        this.size = Math.random() * 4 + 1; // Particle size
+        this.speedX = (Math.random() - 0.5) * 4; // Random horizontal speed
+        this.speedY = (Math.random() - 0.5) * 4; // Random vertical speed
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+        this.life = Math.random() * 60 + 60; // Particle lifespan
+    }
+    update() {
+        this.x += this.speedX; // Move
+        this.y += this.speedY;
+        this.life--; // Decrease lifespan
+    }
+    draw() {
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.fill();
+    }
+}
+
+// Handle particles
+function handleParticles() {
+    // Add new particles
+    particles.push(new Particle());
+
+    // Draw and update particles
+    for (let i = particles.length - 1; i >= 0; i--) {
+        particles[i].update();
+        particles[i].draw();
+
+        // Remove if particle has faded out
+        if (particles[i].life <= 0) {
+            particles.splice(i, 1);
+        }
+    }
+}
+
+// Animate
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
+    handleParticles();
+    requestAnimationFrame(animate);
+}
+animate();
+
 function waveCollapse() {
 	var fallerThoughts = Array(
 		"Hahaha, I guess not. That white hand on your shoulder... I'm just imagining it.",
