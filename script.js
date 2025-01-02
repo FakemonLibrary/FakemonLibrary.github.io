@@ -184,6 +184,14 @@ window.addEventListener("resize", () => {
     canvas.height = window.innerHeight;
 });
 
+ctx.fillStyle = 'cyan';
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
+	const img = new Image();
+	img.src = "/Resources/Giratina-Origin.png"; // Replace with your sprite’s path
+	img.onload = () => {
+		ctx.drawImage(img, 100, 100, 96, 96); // Adjust position and size as needed
+	};
+
 const particles = [];
 const colors = ["#00FFFF", "#C71585", "#8A2BE2"]; // Cyan, Magenta, Purple
 
@@ -231,16 +239,9 @@ function handleParticles() {
 
 // Animate
 function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
+    /*ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
     handleParticles();
-    requestAnimationFrame(animate);
-	ctx.fillStyle = 'cyan';
-	ctx.fillRect(0, 0, canvas.width, canvas.height);
-	const img = new Image();
-	img.src = "/Resources/Giratina-Origin.png"; // Replace with your sprite’s path
-	img.onload = () => {
-		ctx.drawImage(img, 100, 100, 96, 96); // Adjust position and size as needed
-	};
+    requestAnimationFrame(animate);*/
 }
 
 function waveCollapse() {
