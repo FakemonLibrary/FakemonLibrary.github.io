@@ -176,8 +176,8 @@ const canvas = document.getElementById("lostZoneCanvas");
 const ctx = canvas.getContext("2d");
 
 // Resize canvas to fit the page
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = rect.width;
+canvas.height = 120;
 
 window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
@@ -185,7 +185,7 @@ window.addEventListener("resize", () => {
 });
 
 ctx.fillStyle = 'cyan';
-ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillRect(0, 0, rect.width, 120);
 
 const img = new Image();
 img.src = "/Resources/Giratina-Origin.png";
