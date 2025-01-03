@@ -303,11 +303,19 @@ h1 {
 	font-size: 20pt;
 }
 
-h1.lost-zone {
+h1.lost-error {
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
 	font-family: ubuntuLight;
 	font-size: 45pt;
+	text-align: center;
+}
+
+h1.lost-greeting {
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	font-family: ubuntuLight;
+	font-size: 20pt;
 	text-align: center;
 }
 
