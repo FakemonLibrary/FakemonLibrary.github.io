@@ -307,7 +307,7 @@ h1.lost-error {
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
 	font-family: ubuntuLight;
-	font-size: 45pt;
+	font-size: 35pt;
 	text-align: center;
 }
 
@@ -417,6 +417,15 @@ a:hover {
 	float: left;
 	margin: 0px 10px 10px 0px;
 	max-width: 45%;
+}
+
+.lost-particles {
+	margin: auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	display: block;
+	text-align: center;
+	max-width: 100%;
 }
 
 .G {
