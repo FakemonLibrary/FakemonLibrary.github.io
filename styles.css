@@ -429,6 +429,7 @@ a:hover {
 }
 
 .G {
+	position: absolute;
 	margin: auto;
 	margin-top: 0px;
 	margin-bottom: 20px;
