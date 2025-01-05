@@ -421,9 +421,9 @@ a:hover {
 
 .lost-particles {
 	margin: auto;
-	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	display: block;
-	text-align: center;
 	max-width: 100%;
 }
 
