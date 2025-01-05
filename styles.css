@@ -421,8 +421,7 @@ a:hover {
 
 .lost-particles {
 	margin: auto;
-	margin-top: 0px;
-	margin-bottom: 20px;
+	margin: 0px;
 	display: block;
 	text-align: center;
 	max-width: 100%;
@@ -432,9 +431,10 @@ a:hover {
 	position: absolute;
 	left: 0; 
 	right: 0; 
+	margin: 0px;
 	margin-inline: auto; 
 	width: fit-content;
-	top: 198px;
+	top: 180px;
 }
 
 /*Pokédex List Styles=======================================================================*/
