@@ -303,20 +303,20 @@ h1 {
 	font-size: 20pt;
 }
 
-h1.lost-error {
-	margin: 0px 0px 15px 0px;
-	padding: 0px;
-	font-family: ubuntuLight;
-	font-size: 35pt;
-	text-align: center;
-}
-
-h2.lost-greeting {
-	background: transparent;
+h1.lost-greeting {
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
 	font-family: ubuntuLight;
 	font-size: 20pt;
+	text-align: center;
+}
+
+h2.lost-code {
+	background: transparent;
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	font-family: ubuntuLight;
+	font-size: 35pt;
 	text-align: center;
 }
 
