@@ -326,7 +326,6 @@ h2 {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
-	/*border-radius: 10px;*/
 	background-color: #ff8576;
 }
 
@@ -336,7 +335,6 @@ h3 {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 2px 7px;
-	/*border-radius: 10px;*/
 	background-color: #ffc0b7;
 }
 
@@ -364,14 +362,12 @@ h2.news-header {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
-	/*border-radius: 10px;*/
 	background-color: #9191ff;
 }
 div.news-entry {
 	padding: 20px;
 	margin: 0px 0px 20px 0px;
 	background-color: #e6e6ff;
-	/*border-radius: 10px;*/
 }
 div.news-entry:hover {
 	background-color: #ccccff;
@@ -386,7 +382,6 @@ p.news-signature {
 table {
 	border: 1px;
 	border-spacing: 1px;
-	/*border-radius: 5px;*/
 	background-color: #5b5672;
 	padding: 0px;
 }
@@ -437,7 +432,7 @@ a:hover {
 	top: 185px;
 }
 
-/*Pokédex List Styles=======================================================================*/
+/*Pokédex General Styles=======================================================================*/
 
 p.data {
 	margin: 0px;
@@ -447,7 +442,6 @@ p.data {
 }
 p.type {
 	text-align: center;
-	/*border-radius: 5px;*/
 	margin: 0px;
 	padding: 0px;
 }
@@ -619,7 +613,6 @@ div.tracker-outline {
 	border-style: solid;
 	border-color: #5b5672;
 	border-width: 1px;
-	/*border-radius: 5px;*/
 }
 table.dex-tracker {
 	border-spacing: 0px;
@@ -720,7 +713,6 @@ h2.dex-section {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 0px;
-	/*border-radius: 10px;*/
 	background-color: unset;
 }
 
@@ -729,7 +721,6 @@ h3.dex-section {
 	text-align: center;
 	margin: 0px 0px 15px 0px;
 	padding: 2px 7px;
-	/*border-radius: 10px;*/
 	background-color: unset;
 }
 
@@ -830,7 +821,6 @@ td.total {
 
 p.stat { /*Used for EV yield, not Base Stats*/
 	text-align: center;
-	/*border-radius: 7px;*/
 	margin: 0px;
 	padding: 0px;
 }
@@ -852,7 +842,6 @@ p.stat { /*Used for EV yield, not Base Stats*/
 p.color {
 	color: white;
 	text-align: center;
-	/*border-radius: 7px;*/
 	margin: 0px;
 	padding: 0px;
 }

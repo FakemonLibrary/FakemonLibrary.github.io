@@ -35,7 +35,7 @@ function buildPokedex(currentUniverse) {
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
-		//Originally developed for the HANDY910is model of Pokédex, this simple upgrade incorporates the functionality to handle multiple Pokémon forms as well as gender differences.
+		//Originally developed for the HANDY910is model of Pokédex, this simple upgrade incorporates the functionality to handle multiple Pokémon forms, as well as gender differences.
 		if (dexLinks[i].classList.contains("form")) {
 			dexLinks[i].innerHTML = dexLinks[i].id;
 		}
@@ -105,44 +105,11 @@ function toggleCaught(pid) {
 	}
 }
 
-function toggleLiving(pid) {
-	//Inspired by Lyra's website, this lets you track which Pokémon you have caught in each ROM hack/fan game
-	//Click once to set to Registered, click once again to set to Caught. Then one more click, and it resets.
-	var element = document.getElementById(pid);
-	
-	if (element.classList.contains("registered")) {
-		setCookie(pid, "registered", -1);
-		setCookie(pid, "caught", 400);
-		element.classList.toggle("registered");
-		element.classList.toggle("caught");
-	} else if (element.classList.contains("caught")) {
-		setCookie(pid, "caught", -1);
-		element.classList.toggle("caught");
-	} else {
-		setCookie(pid, "registered", 400);
-		element.classList.toggle("registered");
-	}
-}
-
 function loadSave(currentUniverse) {
 	var slot, i;
 	slot = document.getElementsByClassName("dex-tracker");
 	for (i = 0; i < (slot.length); i++) {
 		if (getCookie(currentUniverse + i.toString()) == "caught") {
-			slot[i].classList.toggle("caught");
-			setCookie(currentUniverse + i.toString(), "caught", 400);
-		}
-	}
-}
-
-function loadSaveLiving(currentUniverse) {
-	var slot, i;
-	slot = document.getElementsByClassName("dex-tracker");
-	for (i = 0; i < (slot.length); i++) {
-		if (getCookie(currentUniverse + i.toString()) == "registered") {
-			slot[i].classList.toggle("registered");
-			setCookie(currentUniverse + i.toString(), "registered", 400);
-		} else if (getCookie(currentUniverse + i.toString()) == "caught") {
 			slot[i].classList.toggle("caught");
 			setCookie(currentUniverse + i.toString(), "caught", 400);
 		}
@@ -157,17 +124,6 @@ function loadSavedForms() {
 			slot[i].classList.toggle("caught");
 			setCookie(slot[i].id, "caught", 400);
 		}
-	}
-}
-
-function flipSprite(spr, front, back) {
-	var sp = document.getElementById(spr);
-	if (sp.title == "Front") {
-		sp.src = back;
-		sp.title = "Back";
-	} else {
-		sp.src = front;
-		sp.title = "Front";
 	}
 }
 
@@ -209,6 +165,7 @@ function waveCollapse() {
 		"It's funny because we're all living in a simulation and free will is a lie.",
 		"Who are you running from?",
 		"You know how I never like letting people see my unfinished work.",
+		"Seven years of computer science for this, huh?",
 		"Welcome to the zone between zones.",
 		"Warning: Nonstandard Spacetime",
 		"God save you if you hear something wandering around nearby, because it sure as hell has heard you.",
