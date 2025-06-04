@@ -115,13 +115,13 @@ function toggleCaught(pid) {
 	}
 }
 
-function loadSave(currentUniverse) {
+function loadSave() {
 	var slot, i;
 	slot = document.getElementsByClassName("dex-tracker");
 	for (i = 0; i < (slot.length); i++) {
-		if (getCookie(currentUniverse + i.toString()) == "caught") {
+		if (getCookie(i.toString()) == "caught") {
 			slot[i].classList.toggle("caught");
-			setCookie(currentUniverse + i.toString(), "caught", 400);
+			setCookie(i.toString(), "caught", 400);
 		}
 	}
 }
