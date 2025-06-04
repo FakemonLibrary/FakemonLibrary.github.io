@@ -42,7 +42,7 @@ function buildPokedex(currentUniverse) {
 			dexLinks[i].innerHTML = dexLinks[i].id;
 		}
 		dexLinks[i].href = "Pokédex/" + dexLinks[i].innerText + ".html";
-		dexLinks[i].setAttribute("onclick", event.stopPropagation());
+		dexLinks[i].setAttribute("onclick", "event.stopPropagation()");
 	}
 }
 
