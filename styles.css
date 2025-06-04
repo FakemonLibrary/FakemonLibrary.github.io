@@ -622,7 +622,7 @@ table.dex-tracker {
 	-ms-user-select: none;
 	user-select: none;
 }
-table.dex-tracker td:hover {
+table.dex-tracker {
 	cursor: pointer;
 }
 
