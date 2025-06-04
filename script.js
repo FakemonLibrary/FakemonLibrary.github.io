@@ -44,7 +44,7 @@ function buildPokedex(addLinks, externalMode, otherUniverse) {
 		typeRows[i].setAttribute("onclick", functionString);
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
 		if (addLinks == true) {
-			if (externalMode == true) {
+			if (externalMode == false) {
 				//Originally developed for the HANDY910is model of Pokédex, this simple upgrade incorporates the functionality to handle multiple Pokémon forms, including gender differences.
 				if (dexLinks[i].classList.contains("form")) {
 					dexLinks[i].innerHTML = dexLinks[i].id;
