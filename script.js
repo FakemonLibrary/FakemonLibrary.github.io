@@ -101,17 +101,17 @@ function toggleCaught(pid) {
 	
 	var element = document.getElementById(pid);
 	
-	if (element.classList.contains("seen")) {
-		setCookie(pid, "seen", -1);
-		setCookie(pid, "caught", 400);
-		element.classList.toggle("seen");
-		element.classList.toggle("caught");
-	} else if (element.classList.contains("caught")) {
+	if (element.classList.contains("caught")) {
 		setCookie(pid, "caught", -1);
-		element.classList.toggle("caught");
-	} else {
 		setCookie(pid, "seen", 400);
+		element.classList.toggle("caught");
 		element.classList.toggle("seen");
+	} else if (element.classList.contains("seen")) {
+		setCookie(pid, "seen", -1);
+		element.classList.toggle("seen");
+	} else {
+		setCookie(pid, "caught", 400);
+		element.classList.toggle("caught");
 	}
 }
 
