@@ -25,12 +25,16 @@ function buildPokedex(addLinks, externalMode, otherUniverse) {
 	
 	var dexLinks, dexSprites, dexTrackers, i;
 	
-	dexLinks = document.getElementsByClassName("dex-link");
 	dexTrackers = document.getElementsByClassName("dex-tracker");
 	slotHeaders = document.getElementsByClassName("slot-header");
 	spriteCells = document.getElementsByClassName("sprite-cell");
 	dexSprites = document.getElementsByClassName("dex-sprite");
 	typeRows = document.getElementsByClassName("type-row");
+	
+	if (addLinks == true) {
+		dexLinks = document.getElementsByClassName("dex-link");
+	}
+	
 	for (i = 0; i < (dexTrackers.length); i++) {
 		iString = i.toString();
 		dexTrackers[i].id = iString;
