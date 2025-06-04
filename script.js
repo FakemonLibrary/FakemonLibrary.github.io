@@ -25,6 +25,7 @@ function buildPokedex(currentUniverse) {
 	var dexLinks, dexSprites, dexTrackers, i;
 	dexTrackers = document.getElementsByClassName("dex-tracker");
 	dexLinks = document.getElementsByClassName("dex-link");
+	slotHeaders = document.getElementsByClassName("slot-header");
 	spriteCells = document.getElementsByClassName("sprite-cell");
 	dexSprites = document.getElementsByClassName("dex-sprite");
 	typeRows = document.getElementsByClassName("type-row");
@@ -32,6 +33,7 @@ function buildPokedex(currentUniverse) {
 		iString = i.toString();
 		dexTrackers[i].id = currentUniverse + iString;
 		functionString = "toggleCaught('" + currentUniverse + iString + "')"
+		slotHeaders[i].setAttribute("onclick", functionString);
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
