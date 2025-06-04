@@ -21,7 +21,7 @@ function includeHTML() {
 	}
 }
 
-function buildPokedex(currentUniverse) {
+function buildPokedex() {
 	var dexLinks, dexSprites, dexTrackers, i;
 	dexTrackers = document.getElementsByClassName("dex-tracker");
 	dexLinks = document.getElementsByClassName("dex-link");
@@ -31,8 +31,8 @@ function buildPokedex(currentUniverse) {
 	typeRows = document.getElementsByClassName("type-row");
 	for (i = 0; i < (dexTrackers.length); i++) {
 		iString = i.toString();
-		dexTrackers[i].id = currentUniverse + iString;
-		functionString = "toggleCaught('" + currentUniverse + iString + "')"
+		dexTrackers[i].id = iString;
+		functionString = "toggleCaught('" + iString + "')"
 		slotHeaders[i].setAttribute("onclick", functionString);
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
