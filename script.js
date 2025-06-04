@@ -98,13 +98,20 @@ function getCookie(cname) {
 
 function toggleCaught(pid) {
 	//Inspired by Lyra's website, this lets you track which Pokémon you have caught in each ROM hack/fan game
-	//Usng this for tracking individual forms (for Pokémon that have them)
+	
 	var element = document.getElementById(pid);
-	element.classList.toggle("caught");
-	if (element.classList.contains("caught")) {
+	
+	if (element.classList.contains("seen")) {
+		setCookie(pid, "seen", -1);
 		setCookie(pid, "caught", 400);
-	} else {
+		element.classList.toggle("seen");
+		element.classList.toggle("caught");
+	} else if (element.classList.contains("caught")) {
 		setCookie(pid, "caught", -1);
+		element.classList.toggle("caught");
+	} else {
+		setCookie(pid, "seen", 400);
+		element.classList.toggle("seen");
 	}
 }
 
