@@ -25,6 +25,7 @@ function buildPokedex(addLinks, externalMode, otherUniverse) {
 	
 	var dexLinks, dexSprites, dexTrackers, i;
 	
+	dexLinks = document.getElementsByClassName("dex-link");
 	dexTrackers = document.getElementsByClassName("dex-tracker");
 	slotHeaders = document.getElementsByClassName("slot-header");
 	spriteCells = document.getElementsByClassName("sprite-cell");
