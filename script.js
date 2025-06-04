@@ -122,7 +122,9 @@ function loadSave() {
 		if (getCookie(i.toString()) == "caught") {
 			slot[i].classList.toggle("caught");
 			setCookie(i.toString(), "caught", 400);
-		}
+		} else if (getCookie(i.toString()) == "seen") {
+			slot[i].classList.toggle("seen");
+			setCookie(i.toString(), "seen", 400);
 	}
 }
 
