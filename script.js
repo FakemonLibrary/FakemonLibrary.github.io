@@ -21,10 +21,11 @@ function includeHTML() {
 	}
 }
 
-function buildPokedex(addLinks, externalMode = false, otherUniverse = "") {
+function buildPokedex(addLinks, externalMode, otherUniverse) {
+	
 	var dexLinks, dexSprites, dexTrackers, i;
+	
 	dexTrackers = document.getElementsByClassName("dex-tracker");
-	dexLinks = document.getElementsByClassName("dex-link");
 	slotHeaders = document.getElementsByClassName("slot-header");
 	spriteCells = document.getElementsByClassName("sprite-cell");
 	dexSprites = document.getElementsByClassName("dex-sprite");
@@ -37,8 +38,8 @@ function buildPokedex(addLinks, externalMode = false, otherUniverse = "") {
 		spriteCells[i].setAttribute("onclick", functionString);
 		typeRows[i].setAttribute("onclick", functionString);
 		dexSprites[i].src = "Sprites/" + dexLinks[i].innerText + ".png";
-		if addLinks {
-			if !externalMode {
+		if (addLinks) {
+			if (!externalMode) {
 				//Originally developed for the HANDY910is model of Pokédex, this simple upgrade incorporates the functionality to handle multiple Pokémon forms, including gender differences.
 				if (dexLinks[i].classList.contains("form")) {
 					dexLinks[i].innerHTML = dexLinks[i].id;
@@ -55,7 +56,6 @@ function buildPokedex(addLinks, externalMode = false, otherUniverse = "") {
 			}
 			
 		}
-		
 	}
 }
 
